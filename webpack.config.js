@@ -30,8 +30,8 @@ module.exports = (env, options) => {
       },
     },
     resolve: {
-        extensions: ['.js']
-      },
+      extensions: [".js"],
+    },
     module: {
       rules: [
         {
@@ -59,7 +59,7 @@ module.exports = (env, options) => {
       new webpack.HotModuleReplacementPlugin(),
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
-        title: "English-for-kids",
+        title: "Специализированные дисциплины",
         template: path.resolve(__dirname, "./src/index.html"),
         filename: "index.html",
       }),

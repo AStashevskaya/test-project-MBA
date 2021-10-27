@@ -1,0 +1,95 @@
+.module {
+  width: 50%;
+  display: flex;
+  margin-right: 45px;
+
+  @media (max-width: $max-1280) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $max-768) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  &__heading {
+    line-height: 38.4px;
+    font-size: 32px;
+    font-family: 'StyreneAWeb Regular';
+    border-top: 2px solid #ff3535;
+    padding-top: 29px;
+    margin-right: 81px;
+    text-align: start;
+    white-space: nowrap;
+
+    @media (max-width: $max-768) {
+      border-top: none;
+      background-color: #f7f7f7;
+      height: 51px;
+      width: 100%;
+      color: $text-color;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 130%;
+      display: flex;
+      align-items: center;
+      padding: 0 0 0 69px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      position: relative;
+
+      &::before {
+        content: "+";
+        color: #d9d9d9;
+        font-size: 40px;
+        top: calc(50% - 20px);
+        position: absolute;
+        left: 24px;
+        user-select: none;
+      }
+    }
+  }
+
+  ul {
+    padding-top: 29px;
+
+    @media (max-width: $max-768) {
+      display: none;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: 10px;
+
+      &::before {
+        @include point;
+      }
+    }
+  }
+}
+
+.active.module {
+  & > .module__heading {
+    background-color: #ff3535;
+    color: white;
+
+    &::before {
+      content: " ";
+      background-color: white;
+      width: 18px;
+      height: 2px;
+      top: 50%;
+      position: absolute;
+      left: 24px;
+      border-radius: 2px;
+      user-select: none;
+    }
+  }
+
+  ul {
+    display: block;
+    padding-left: 15px;
+    padding-top: 17px;
+  }
+}

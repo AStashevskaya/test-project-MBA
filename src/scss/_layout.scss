@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 71px 240px 171px;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  @media (max-width: 1700px) {
+    padding: 71px 130px 171px;
+  }
+
+  @media (max-width: 1400px) {
+    padding: 71px 80px 171px;
+  }
+
+  @media (max-width: $max-768) {
+    padding: 28px 15px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43.2px;
+    margin-bottom: 89px;
+    font-family: 'StyreneAWeb Bold';
+
+    @media (max-width: $max-768) {
+      font-family: 'StyreneAWeb Regular';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 120%;
+      margin-bottom: 34px;
+    }
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  padding-bottom: 170px;
+}

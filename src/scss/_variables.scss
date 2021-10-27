@@ -1,0 +1,15 @@
+@mixin point() {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: -15px;
+  top: 7px;
+  background: #ff3535;
+  border-radius: 60px;
+}
+
+$max-768: 769px;
+$max-1280: 1280px;
+
+$text-color: #262626;

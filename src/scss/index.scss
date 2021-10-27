@@ -1,0 +1,38 @@
+@import '_variables';
+@import '_reset';
+@import '_layout';
+@import '_program';
+@import '_module';
+@import '_conclusion';
+// @import 
+
+@font-face {
+    font-family: 'StyreneAWeb Regular';
+    // font-style: normal;
+    font-weight: 400;
+    src: url(../assets/StyreneAWeb-Regular.ttf)
+  }
+
+  @font-face {
+    font-family: 'StyreneAWeb Thin';
+    font-style: thin;
+    font-weight: 100;
+    src: url(../assets/StyreneAWeb-Thin.ttf)
+  }
+
+   @font-face {
+    font-family: 'StyreneAWeb Bold';
+    // font-style: bold;
+    font-weight: 900;
+    src: url(../assets/StyreneAWeb-Medium.ttf)
+  }
+
+  body {
+    font-family: 'StyreneAWeb Thin';
+    font-style: normal;
+    font-weight: 100;
+    color: #000000;
+    overflow-y: scroll;
+    height: 100%;
+    // font-size: 16px;
+}
